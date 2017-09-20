@@ -337,6 +337,12 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
   }
 }
 
+.verticaltabs .ui-tabs-panel {
+    border-right: none !important;
+    border-bottom: none !important;
+    border-radius: 0px !important;
+    }
+
 //Panel -- not working yet
 .nx-lefttabs > .ui-tabs-panel{
   border-radius: 0 !important;
