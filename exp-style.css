@@ -136,15 +136,18 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
   .nx-lefttabs.ui-tabs li.ui-state-default.ui-state-active, .nx-lefttabs.ui-tabs li.ui-state-default.ui-state-hover, .nx-lefttabs.ui-tabs li.ui-state-default {
     border: 0 !important;
     background: #ECF2FA;
-    border-radius: 0 !important; }
+    border-radius: 0 !important;
+    color: #54698d; }
   .nx-lefttabs.ui-tabs li.ui-state-default.ui-tabs-active.ui-state-active {
     border-radius: 0;
     border: 0; }
 
-.nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all {
+.nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-helper-reset.ui-widget-header {
   border: 0 !important;
   border-radius: 0 !important;
-  background: none; }
+  background: none;
+  height: 100%;
+  border-right: 1px solid #d8dde6 !important; }
 
 .nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active.ui-state-hover a {
   background: #ECF2FA;
@@ -154,13 +157,18 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
   border: none;
   border-radius: 0; }
 
-.nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active li.ui-state-hover:first-child {
-  border-left: 1px solid #d8dde6; }
-
-.nx-lefttabs > .ui-tabs-panel {
+.nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-widget-header {
+  border: 0 !important;
   border-radius: 0 !important;
-  border-bottom: 0;
-  border-right: 0; }
+  background: none;
+  padding-top: 1px; }
+
+.verticaltabs .ui-tabs-panel {
+  border-right: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-radius: 0 !important; }
 
 /*CALENDAR*/
 /*POPUP*/
