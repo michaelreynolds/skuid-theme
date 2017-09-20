@@ -147,6 +147,7 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
   border-radius: 0 !important;
   background: none;
   height: 100%;
+  height: -webkit-fill-available;
   border-right: 1px solid #d8dde6 !important; }
 
 .nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active.ui-state-hover a {

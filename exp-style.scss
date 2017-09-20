@@ -322,6 +322,7 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
         border-radius: 0 !important;
         background: none;
         height: 100%;
+        height: -webkit-fill-available;
         border-right: $border-width solid #d8dde6 !important;
     }
     &.ui-tabs .ui-tabs-nav li.ui-tabs-active{
