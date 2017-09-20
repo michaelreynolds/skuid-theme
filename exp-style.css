@@ -163,6 +163,9 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
   background: none;
   padding-top: 1px; }
 
+.nx-lefttabs > .ui-tabs-panel {
+  padding: 2rem 2.5rem !important; }
+
 .verticaltabs .ui-tabs-panel {
   border-right: none !important;
   border-bottom: none !important;

@@ -302,49 +302,54 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
 
 // VERTICAL LEFT TABS
 /*styling vertical tabs*/
-.nx-lefttabs.ui-tabs{
-  & li.ui-state-default{
-    min-width: 100%;
-    &.ui-state-active, &.ui-state-hover, & {
-      border: 0 !important;
-      background: $blue-hover;
-      border-radius: 0 !important;
-      color: #54698d;
+.nx-lefttabs{
+  &.ui-tabs{
+    & li.ui-state-default{
+      min-width: 100%;
+      &.ui-state-active, &.ui-state-hover, & {
+        border: 0 !important;
+        background: $blue-hover;
+        border-radius: 0 !important;
+        color: #54698d;
+      }
+      &.ui-tabs-active.ui-state-active {
+        border-radius: 0;
+        border: 0;
+      }
     }
-    &.ui-tabs-active.ui-state-active {
-      border-radius: 0;
-      border: 0;
+    & ul.ui-tabs-nav.ui-helper-reset.ui-widget-header{
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: none;
+        height: 100%;
+        border-right: $border-width solid #d8dde6 !important;
     }
-  }
-  & ul.ui-tabs-nav.ui-helper-reset.ui-widget-header{
+    &.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+      & a, &.ui-state-hover a{
+        background: $blue-hover;
+        border-radius: 0;
+      }
+      & li.ui-state-hover {
+        border: none;
+        border-radius: 0;
+      }
+      // & li.ui-state-hover:first-child {
+      //   border-left: $border-width solid #d8dde6; //$border-color;
+      // }
+    }
+    & ul.ui-tabs-nav.ui-widget-header{
       border: 0 !important;
       border-radius: 0 !important;
       background: none;
-      height: 100%;
-      border-right: $border-width solid #d8dde6 !important;
+      padding-top: 1px;
+    }
   }
-  &.ui-tabs .ui-tabs-nav li.ui-tabs-active{
-    & a, &.ui-state-hover a{
-      background: $blue-hover;
-      border-radius: 0;
-    }
-    & li.ui-state-hover {
-      border: none;
-      border-radius: 0;
-    }
-    // & li.ui-state-hover:first-child {
-    //   border-left: $border-width solid #d8dde6; //$border-color;
-    // }
+  & > .ui-tabs-panel{
+    padding: 2rem 2.5rem !important;
   }
 }
 
-.nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-widget-header{
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: none;
-  padding-top: 1px;
-}
-
+// class needed to be added subtabset in order to remove borders
 .verticaltabs .ui-tabs-panel {
   border-right: none !important;
   border-bottom: none !important;
@@ -353,11 +358,6 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
   border-radius: 0 !important;
 }
 
-
-// .nx-lefttabs > .ui-tabs-nav > .ui-tabs-panel,
-// ul.ui-tabs-nav > .ui-tabs-panel{
-//   padding: 0.75rem;
-// }
 
 
 /*CALENDAR*/
