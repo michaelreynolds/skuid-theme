@@ -1,0 +1,333 @@
+/*TABLE OF CONTENTS*/
+/*---------------------------*/
+/*GLOBAL*/
+/*PAGE TITLE*/
+/*TABLE*/
+/*BUTTONS*/
+/*ACTIONS // FILTERS*/
+/*FIELD EDITOR*/
+/*DROPDOWN*/
+/*CHECKBOX*/
+/*INPUTS*/
+/*QUEUE*/
+/*TAB SET*/
+/*CALENDAR*/
+/*FILE*/
+/*POPUP*/
+/*WIZARD*/
+/*NAVIGATION*/
+/*SEARCH*/
+/*WEB FONTS*/
+/*CSS*/
+/*CHARTS*/
+/*KPI*/
+/*COLLAPSIBLE PANEL*/
+/*MISC*/
+/*MESSAGES*/
+/*GLOBAL*/
+/*PAGE TITLE*/
+/*TABLE*/
+/*BUTTONS*/
+.sk-timefilter-button {
+  border-color: #44C76E !important;
+  background: #44C76E !important;
+  color: #fff !important; }
+  .sk-timefilter-button:hover {
+    background: #369F58 !important;
+    border-color: #369F58 !important; }
+
+.sk-timefilter-button-grey {
+  border-color: #D0D3D8 !important;
+  background: #FAFBFC !important;
+  color: #555 !important; }
+  .sk-timefilter-button-grey:hover {
+    background: #ECECEC !important;
+    border-color: #D0D3D8 !important; }
+
+.nx-basicfieldeditor-item {
+  padding: 0rem 0rem 1.25rem 0rem; }
+
+.nx-basicfieldeditor-item-label {
+  color: #555; }
+
+.mono-btn.ui-button {
+  background: #555;
+  border: 1px solid #555; }
+  .mono-btn.ui-button.ui-state-default {
+    background: #555;
+    border: 1px solid #555; }
+
+.alt-btn.ui-button {
+  background: #0181A5;
+  border: 1px solid #0181A5;
+  color: #fff; }
+  .alt-btn.ui-button.ui-state-default {
+    color: #fff;
+    background: #0181A5;
+    border: 1px solid #0181A5; }
+  .alt-btn.ui-button:hover, .alt-btn.ui-button.ui-state-default:hover {
+    background-color: #015972;
+    border-color: #015972;
+    color: #fff; }
+
+/*ACTIONS // FILTERS*/
+/*FIELD EDITOR*/
+.nx-basicfieldeditor-column.nx-layout-above .nx-basicfieldeditor-item {
+  border-bottom: 0 !important; }
+
+/*DROPDOWN*/
+.nx-actionselect-dropdown {
+  margin-top: 10px; }
+
+.sk-timefilter-body {
+  border: 1px solid #D0D3D8; }
+
+.sk-navigation-item > span {
+  padding: 0 0.75rem;
+  font-weight: 400; }
+
+div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
+  outline: none; }
+
+.dropdown .sk-dropnav-text .sk-dropnav-dropdown-item {
+  border: 1px solid #D0D3D8;
+  padding: 0 1rem 0 1rem;
+  border-radius: 2px; }
+  .dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
+    outline: none; }
+
+.dropdown .sk-dropnav-arrow {
+  display: none; }
+
+.sk-dropnav-arrow {
+  display: none; }
+
+/*QUEUE*/
+/*TAB SET*/
+.ui-tabs .ui-tabs .ui-tabs-nav li.ui-state-default, .ui-tabs .ui-tabs .ui-tabs-nav li.ui-state-hover, .ui-tabs .ui-tabs .ui-tabs-nav li.ui-state-default, .ui-tabs .ui-tabs .ui-tabs-nav li.ui-state-hover {
+  padding: 0 !important;
+  display: table;
+  display: inline-table; }
+
+.ui-tabs .ui-tabs .ui-tabs-nav li a {
+  padding: 12px 20px !important; }
+
+.ui-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active.ui-state-hover a {
+  padding: 12px 20px !important; }
+
+.ui-tabs .ui-tabs .ui-tabs-nav li a, .ui-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active a:focus {
+  outline: none; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor:focus, .ui-tabs .ui-tabs-nav li.ui-tabs-active:focus, .ui-tabs .ui-tabs-nav li.ui-tabs-active a:focus {
+  outline: none; }
+
+.ui-state-default .ui-corner-top:focus {
+  outline: none; }
+
+.ui-tabs .ui-tabs-nav li:focus {
+  outline: none; }
+
+.ui-tabs .ui-tabs-nav li a:hover, .ui-tabs .ui-tabs-nav li a:focus {
+  outline: none; }
+
+/*CALENDAR*/
+/*POPUP*/
+.ui-dialog .ui-dialog-title {
+  text-align: left; }
+
+/*WIZARD*/
+/*NAVIGATION*/
+.nav-header {
+  background: #00355F;
+  padding: 24px 40px; }
+
+.sk-navigation-dropdown > .sk-dropnav-dropdown, .sk-subnavigation {
+  border-radius: 2px;
+  margin-top: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
+
+.sk-navigation-dropdown > .sk-dropnav-dropdown > .sk-dropnav-dropdown-item {
+  padding: 5px;
+  border-radius: 2px; }
+
+.sk-navigation-horizontal {
+  border-top: none !important;
+  border-bottom: none !important; }
+
+.ui-tabs {
+  margin: 0 !important; }
+
+.user-photo {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 40px;
+  margin: auto;
+  overflow: hidden;
+  width: 30px;
+  height: 30px; }
+
+/*SEARCH*/
+/*alt search styling*/
+/*alt search placeholder text color styling*/
+.search-alt.sk-search .ui-autocomplete-input {
+  border: 1px solid #044E65;
+  background: #044E65;
+  color: #fff; }
+  .search-alt.sk-search .ui-autocomplete-input::-webkit-input-placeholder, .search-alt.sk-search .ui-autocomplete-input::-moz-placeholder, .search-alt.sk-search .ui-autocomplete-input:-ms-input-placeholder, .search-alt.sk-search .ui-autocomplete-input:-moz-placeholder, .search-alt.sk-search .ui-autocomplete-input::placeholder {
+    color: #fff; }
+
+.search-alt.sk-search > div.nx-field-reference-search {
+  color: #fff; }
+
+/*search icon style*/
+/*WEB FONTS*/
+/*font awesome colors*/
+.ui-icon.ui-icon-blank, .ui-icon.ui-icon-carat-1-n, .ui-icon.ui-icon-carat-1-ne, .ui-icon.ui-icon-carat-1-e, .ui-icon.ui-icon-carat-1-se, .ui-icon.ui-icon-carat-1-s, .ui-icon.ui-icon-carat-1-sw, .ui-icon.ui-icon-carat-1-w, .ui-icon.ui-icon-carat-1-nw, .ui-icon.ui-icon-carat-2-n-s, .ui-icon.ui-icon-carat-2-e-w, .ui-icon.ui-icon-triangle-1-n, .ui-icon.ui-icon-triangle-1-ne, .ui-icon.ui-icon-triangle-1-e, .ui-icon.ui-icon-triangle-1-se, .ui-icon.ui-icon-triangle-1-s, .ui-icon.ui-icon-triangle-1-sw, .ui-icon.ui-icon-triangle-1-w, .ui-icon.ui-icon-triangle-1-nw, .ui-icon.ui-icon-triangle-2-n-s, .ui-icon.ui-icon-triangle-2-e-w, .ui-icon.ui-icon-arrow-1-n, .ui-icon.ui-icon-arrow-1-ne, .ui-icon.ui-icon-arrow-1-e, .ui-icon.ui-icon-arrow-1-se, .ui-icon.ui-icon-arrow-1-s, .ui-icon.ui-icon-arrow-1-sw, .ui-icon.ui-icon-arrow-1-w, .ui-icon.ui-icon-arrow-1-nw, .ui-icon.ui-icon-arrow-2-n-s, .ui-icon.ui-icon-arrow-2-ne-sw, .ui-icon.ui-icon-arrow-2-e-w, .ui-icon.ui-icon-arrow-2-se-nw, .ui-icon.ui-icon-arrowstop-1-n, .ui-icon.ui-icon-arrowstop-1-e, .ui-icon.ui-icon-arrowstop-1-s, .ui-icon.ui-icon-arrowstop-1-w, .ui-icon.ui-icon-arrowthick-1-n, .ui-icon.ui-icon-arrowthick-1-ne, .ui-icon.ui-icon-arrowthick-1-e, .ui-icon.ui-icon-arrowthick-1-se, .ui-icon.ui-icon-arrowthick-1-s, .ui-icon.ui-icon-arrowthick-1-sw, .ui-icon.ui-icon-arrowthick-1-w, .ui-icon.ui-icon-arrowthick-1-nw, .ui-icon.ui-icon-arrowthick-2-n-s, .ui-icon.ui-icon-arrowthick-2-ne-sw, .ui-icon.ui-icon-arrowthick-2-e-w, .ui-icon.ui-icon-arrowthick-2-se-nw, .ui-icon.ui-icon-arrowthickstop-1-n, .ui-icon.ui-icon-arrowthickstop-1-e, .ui-icon.ui-icon-arrowthickstop-1-s, .ui-icon.ui-icon-arrowthickstop-1-w, .ui-icon.ui-icon-arrowreturnthick-1-w, .ui-icon.ui-icon-arrowreturnthick-1-n, .ui-icon.ui-icon-arrowreturnthick-1-e, .ui-icon.ui-icon-arrowreturnthick-1-s, .ui-icon.ui-icon-arrowreturn-1-w, .ui-icon.ui-icon-arrowreturn-1-n, .ui-icon.ui-icon-arrowreturn-1-e, .ui-icon.ui-icon-arrowreturn-1-s, .ui-icon.ui-icon-arrowrefresh-1-w, .ui-icon.ui-icon-arrowrefresh-1-n, .ui-icon.ui-icon-arrowrefresh-1-e, .ui-icon.ui-icon-arrowrefresh-1-s, .ui-icon.ui-icon-arrow-4, .ui-icon.ui-icon-arrow-4-diag, .ui-icon.ui-icon-extlink, .ui-icon.ui-icon-newwin, .ui-icon.ui-icon-refresh, .ui-icon.ui-icon-shuffle, .ui-icon.ui-icon-transfer-e-w, .ui-icon.ui-icon-transferthick-e-w, .ui-icon.ui-icon-folder-collapsed, .ui-icon.ui-icon-folder-open, .ui-icon.ui-icon-document, .ui-icon.ui-icon-document-b, .ui-icon.ui-icon-note, .ui-icon.ui-icon-mail-closed, .ui-icon.ui-icon-mail-open, .ui-icon.ui-icon-suitcase, .ui-icon.ui-icon-comment, .ui-icon.ui-icon-person, .ui-icon.ui-icon-print, .ui-icon.ui-icon-trash, .ui-icon.ui-icon-locked, .ui-icon.ui-icon-unlocked, .ui-icon.ui-icon-bookmark, .ui-icon.ui-icon-tag, .ui-icon.ui-icon-home, .ui-icon.ui-icon-flag, .ui-icon.ui-icon-calendar, .ui-icon.ui-icon-cart, .ui-icon.ui-icon-pencil, .ui-icon.ui-icon-clock, .ui-icon.ui-icon-disk, .ui-icon.ui-icon-calculator, .ui-icon.ui-icon-zoomin, .ui-icon.ui-icon-zoomout, .ui-icon.ui-icon-search, .ui-icon.ui-icon-wrench, .ui-icon.ui-icon-gear, .ui-icon.ui-icon-heart, .ui-icon.ui-icon-star, .ui-icon.ui-icon-link, .ui-icon.ui-icon-cancel, .ui-icon.ui-icon-plus, .ui-icon.ui-icon-plusthick, .ui-icon.ui-icon-minus, .ui-icon.ui-icon-minusthick, .ui-icon.ui-icon-close, .ui-icon.ui-icon-closethick, .ui-icon.ui-icon-key, .ui-icon.ui-icon-lightbulb, .ui-icon.ui-icon-scissors, .ui-icon.ui-icon-clipboard, .ui-icon.ui-icon-copy, .ui-icon.ui-icon-contact, .ui-icon.ui-icon-image, .ui-icon.ui-icon-video, .ui-icon.ui-icon-script, .ui-icon.ui-icon-alert, .ui-icon.ui-icon-info, .ui-icon.ui-icon-notice, .ui-icon.ui-icon-help, .ui-icon.ui-icon-check, .ui-icon.ui-icon-bullet, .ui-icon.ui-icon-radio-on, .ui-icon.ui-icon-radio-off, .ui-icon.ui-icon-pin-w, .ui-icon.ui-icon-pin-s, .ui-icon.ui-icon-play, .ui-icon.ui-icon-pause, .ui-icon.ui-icon-seek-next, .ui-icon.ui-icon-seek-prev, .ui-icon.ui-icon-seek-end, .ui-icon.ui-icon-seek-start, .ui-icon.ui-icon-seek-first, .ui-icon.ui-icon-stop, .ui-icon.ui-icon-eject, .ui-icon.ui-icon-volume-off, .ui-icon.ui-icon-volume-on, .ui-icon.ui-icon-power, .ui-icon.ui-icon-signal-diag, .ui-icon.ui-icon-signal, .ui-icon.ui-icon-battery-0, .ui-icon.ui-icon-battery-1, .ui-icon.ui-icon-battery-2, .ui-icon.ui-icon-battery-3, .ui-icon.ui-icon-circle-plus, .ui-icon.ui-icon-circle-minus, .ui-icon.ui-icon-circle-close, .ui-icon.ui-icon-circle-triangle-e, .ui-icon.ui-icon-circle-triangle-s, .ui-icon.ui-icon-circle-triangle-w, .ui-icon.ui-icon-circle-triangle-n, .ui-icon.ui-icon-circle-arrow-e, .ui-icon.ui-icon-circle-arrow-s, .ui-icon.ui-icon-circle-arrow-w, .ui-icon.ui-icon-circle-arrow-n, .ui-icon.ui-icon-circle-zoomin, .ui-icon.ui-icon-circle-zoomout, .ui-icon.ui-icon-circle-check, .ui-icon.ui-icon-circlesmall-plus, .ui-icon.ui-icon-circlesmall-minus, .ui-icon.ui-icon-circlesmall-close, .ui-icon.ui-icon-squaresmall-plus, .ui-icon.ui-icon-squaresmall-minus, .ui-icon.ui-icon-squaresmall-close, .ui-icon.ui-icon-grip-dotted-vertical, .ui-icon.ui-icon-grip-dotted-horizontal, .ui-icon.ui-icon-grip-solid-vertical, .ui-icon.ui-icon-grip-solid-horizontal, .ui-icon.ui-icon-gripsmall-diagonal-se, .ui-icon.ui-icon-grip-diagonal-se {
+  color: #555; }
+
+/*KPI*/
+.kpi-header .sk-wrapper {
+  background: rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  width: 200px;
+  min-height: 40px;
+  padding: 1px 0; }
+
+.kpi-data .sk-wrapper {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+/*COLLAPSIBLE PANEL*/
+.ui-accordion-header {
+  color: #555 !important;
+  background: #fff !important;
+  border-bottom: 1px solid #D0D3D8; }
+  .ui-accordion-header .ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-s {
+    color: #555 !important; }
+
+.ui-accordion .ui-accordion-header {
+  font-size: 16px !important; }
+
+/*MISC*/
+.nx-field input:not([type="radio"]):not([type="checkbox"]):focus, .nx-field textarea:focus, .nx-field .nx-richtext-input:focus {
+  border-color: #00B2DD; }
+
+.ui-autocomplete-input:focus {
+  border-color: #00B2DD; }
+
+.nx-field.nx-layout-above.required.nx-modified input {
+  border-color: #FF3C41; }
+
+.nx-editor-header input.searchbox:focus, input.ui-autocomplete-input:focus {
+  border-color: #00B2DD;
+  outline: none; }
+
+/*MULTI SELECT*/
+.ui-multiselect-filter input {
+  padding: 6px !important;
+  border-radius: 2px;
+  margin-bottom: 5px; }
+  .ui-multiselect-filter input:focus {
+    border-color: #00B2DD;
+    outline: none; }
+
+/*DATE PICKER*/
+.ui-datepicker.ui-widget-content td a, .ui-datepicker.ui-widget-content td span {
+  padding-top: 7px;
+  padding: 7px 3px; }
+
+.ui-datepicker.ui-widget-content td a.ui-state-default:hover, .ui-datepicker.ui-widget-content td a.ui-state-hover {
+  border: none;
+  background: #4186CF;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff; }
+
+/* HIGHLIGHTED UI STATE */
+a.ui-state-default :hover, a.ui-state-highlight:hover {
+  border: none;
+  background: #4186CF;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff; }
+
+.ui-datepicker.ui-widget-content td a.ui-state-hover:hover {
+  border: none;
+  background: #4186CF;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff; }
+
+.ui-datepicker.ui-widget-content td span.ui-state:hover, .ui-datepicker.ui-widget-content td span.ui-state-hover {
+  border: none;
+  background: #4186CF;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff; }
+
+div.nx-actionselect {
+  background: #fff; }
+
+.nx-actionselect-label {
+  top: -28px; }
+
+.nx-actionselect-arrow > div.ui-icon {
+  color: #555 !important; }
+
+.nx-actionselect:hover, .nx-actionselect:focus {
+  background: #4186CF;
+  color: #555; }
+
+div.nx-actionselect {
+  color: #555; }
+
+/*MESSAGES + ALERTS*/
+.nx-message {
+  background: #44C76E; }
+
+.nx-warning {
+  background: #F4A502; }
+
+.nx-page-problems-dismiss {
+  background-color: transparent; }
+
+.ui-icon.ui-icon-close {
+  color: #fff; }
+
+/*CONTAINER*/
+.border-only {
+  border: 1px solid #D0D3D8;
+  border-radius: 3px; }
+
+.container {
+  border: 1px solid #D0D3D8;
+  border-radius: 3px;
+  background: #fff;
+  margin-top: 32px; }
+  .container .sk-wrapper {
+    padding: 24px; }
+
+.page {
+  background: #FAFBFC; }
+
+/*STYLE GUIDE SPECIFIC*/
+.doc {
+  text-transform: uppercase;
+  display: block; }
+
+.color-swatch .sk-wrapper {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #D0D3D8;
+  border-radius: 2px; }
+
+.swatch-text {
+  height: 200px; }
+
+.documentation {
+  background-color: #e4f8fc;
+  border-left: 16px solid #1399B5;
+  padding: 32px;
+  margin: 15px 0; }

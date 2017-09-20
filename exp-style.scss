@@ -1,0 +1,558 @@
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+// Instructions:
+// Run these commands in terminal to setup:
+// Install Homebrew, NPM, and SASS:
+// 1. /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+// 2. brew install node
+// 3. npm install -g node-sass
+//
+// To Compile:
+// node-sass <exp-style.scss> exp-style.css
+//
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+
+/*TABLE OF CONTENTS*/
+/*---------------------------*/
+/*GLOBAL*/
+/*PAGE TITLE*/
+/*TABLE*/
+/*BUTTONS*/
+/*ACTIONS // FILTERS*/
+/*FIELD EDITOR*/
+/*DROPDOWN*/
+/*CHECKBOX*/
+/*INPUTS*/
+/*QUEUE*/
+/*TAB SET*/
+/*CALENDAR*/
+/*FILE*/
+/*POPUP*/
+/*WIZARD*/
+/*NAVIGATION*/
+/*SEARCH*/
+/*WEB FONTS*/
+/*CSS*/
+/*CHARTS*/
+/*KPI*/
+/*COLLAPSIBLE PANEL*/
+/*MISC*/
+/*MESSAGES*/
+
+
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+//-----------------VARIABLES----------------//
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+
+/////////////////////
+// color definitions
+//greys
+$grey-matterhorn:       #555;
+$grey-aluminum:         #D0D3D8;
+$grey-light:            #ECECEC;
+$grey-smoke:            #FAFBFC;
+
+//blues
+$blue-azure:            #ECF2FA;
+$blue-bright:           #00B2DD;
+$blue-royal:            #4186CF;
+$blue-cerulean:         #1A558B;
+$blue-green:            #0181A5;
+$blue-dark-green:       #044E65;
+//branding
+$blue-expedia:          #00355F;
+$yellow-expedia:        #FFC60B;
+//warnings
+$orange-dark:           #F4A502;
+$green-emerald:         #44C76E;
+$red-radical:           #C32F33;
+
+//#FF3C41 radical
+
+//#44C76E emerald
+//#369F58 emerald hover
+
+//#F9F9F9 grey bg
+//#D0D3D8 grey border
+//#ECECEC hover
+
+/////////////////////
+// color application
+$text-light-color:          #fff;
+$text-dark-color:           $grey-matterhorn;
+$button-background:         $grey-matterhorn;
+$border-color:              $grey-aluminum;
+$icon-dark-color:           $grey-matterhorn;
+$input-focus-color:         $blue-bright;
+$alt-btn-color:             $blue-green;
+$alt-search-color:          $blue-dark-green;
+$warning-color:             $orange-dark;
+$message-color:             $green-emerald;
+$page-color:                $grey-smoke;
+$hover-color:               $blue-royal;
+$disabled-color:            $grey-smoke;
+$nav-bg-color:              $blue-expedia;
+
+$btn-primary-color:         $green-emerald;
+$btn-primary-text-color:    $text-light-color;
+$btn-primary-border-color:  $green-emerald;
+
+$btn-secondary-color:       $grey-smoke;
+$btn-secondary-border-color:$grey-aluminum;
+$btn-secondary-focus-color: $grey-matterhorn;
+$btn-secondary-text-color:  $text-dark-color;
+$btn-secondary-hover-color: $grey-light;
+
+$documentation-color:       #1399B5;
+$modified-input-color:      #FF3C41;
+
+/////////////////////
+// other variables
+$border-width:              1px;
+$border-radius:             2px;
+$container-border-radius:   3px;
+$box-shadow:                0 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+//-------------CSS BEGINS HERE--------------//
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+
+/*GLOBAL*/
+/*PAGE TITLE*/
+/*TABLE*/
+/*BUTTONS*/
+
+.sk-timefilter-button{
+  border-color: $btn-primary-border-color !important;
+  background: $btn-primary-color !important;
+  color: $btn-primary-text-color !important;
+  &:hover{
+    background: #369F58 !important; //darken($btn-primary-color,10%) !important;
+    border-color: #369F58 !important; //darken($btn-primary-border-color,10%) !important;
+  }
+}
+
+.sk-timefilter-button-grey{
+  border-color: $btn-secondary-border-color !important;
+  background: $btn-secondary-color !important;
+  color: $btn-secondary-text-color !important;
+  &:hover{
+    background: $btn-secondary-hover-color !important;
+    border-color: $btn-secondary-border-color !important;
+  }
+}
+
+.nx-basicfieldeditor-item{
+  padding: 0rem 0rem 1.25rem 0rem;
+}
+.nx-basicfieldeditor-item-label{
+  color: $text-dark-color;
+}
+
+.mono-btn.ui-button {
+  background: $button-background;
+  border: $border-width solid $button-background;
+  &.ui-state-default {
+    background: $button-background;
+    border: $border-width solid $button-background;
+  }
+}
+.alt-btn.ui-button {
+  background: $alt-btn-color;
+  border: $border-width solid $alt-btn-color;
+  color: $text-light-color;
+  &.ui-state-default {
+    color: $text-light-color;
+    background: $alt-btn-color;
+    border: $border-width solid $alt-btn-color;
+  }
+  &:hover, &.ui-state-default:hover {
+    background-color: darken($alt-btn-color,10%);
+    border-color: darken($alt-btn-color,10%);
+    color: $text-light-color;
+  }
+}
+
+/*ACTIONS // FILTERS*/
+/*FIELD EDITOR*/
+.nx-basicfieldeditor-column.nx-layout-above .nx-basicfieldeditor-item {
+  border-bottom: 0 !important;
+}
+
+/*DROPDOWN*/
+.nx-actionselect-dropdown {
+  margin-top: 10px;
+}
+.sk-timefilter-body {
+  border: $border-width solid $border-color;
+}
+//nav dropdown popup fix
+.sk-navigation-item > span{
+  padding: 0 0.75rem;
+  font-weight: 400;
+}
+
+//.dropdown div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus
+div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
+  // border: $border-width solid $btn-secondary-focus-color;
+  outline: none;
+}
+
+.dropdown{
+  & .sk-dropnav-text .sk-dropnav-dropdown-item{
+    border: $border-width solid $btn-secondary-border-color;
+    padding: 0 1rem 0 1rem;
+    border-radius: $border-radius;
+    &:focus{
+      //border: $border-width solid $btn-secondary-focus-color;
+      outline: none;
+    }
+  }
+  & .sk-dropnav-arrow{
+    display: none;
+  }
+}
+.sk-dropnav-arrow{
+  display: none;
+}
+// /*CHECKBOX*/
+// /*styles the checkboxes universally*/
+// .nx-field input[type="checkbox"] {
+//   -webkit-appearance: none;
+//   border: $border-width solid $border-color;
+//   border-radius: $border-radius;
+//   width: 16px;
+//   min-height: 16px;
+// }
+// .nx-editor input[type=checkbox]:checked {
+//   background: $icon-dark-color;
+//   border: $border-width solid $border-color;
+// }
+// .nx-field input[type="checkbox"][disabled] {
+//   background: $disabled-color;
+//   border: $border-width solid $border-color;
+// }
+// .nx-editor input[type=checkbox] {
+//   &:checked:after {
+//     font-family: fontAwesome;
+//     font-size: 10px;
+//     content: "\f00c";
+//     position: absolute;
+//     margin: 2px;
+//     color: $text-dark-color;
+//   }
+//   &[disabled]:checked:after {
+//     font-family: fontAwesome;
+//     font-size: 10px;
+//     content: "\f00c";
+//     position: absolute;
+//     margin: 2px;
+//     color: $disabled-color;
+//   }
+// }
+
+/*QUEUE*/
+/*TAB SET*/
+.ui-tabs {
+  .ui-tabs .ui-tabs-nav li {
+    &.ui-state-default, &.ui-state-hover, &.ui-state-default, &.ui-state-hover {
+      padding: 0 !important;
+      display: table;
+      display: inline-table;
+    }
+    a {
+      padding: 12px 20px !important;
+    }
+    &.ui-tabs-active {
+      a, &.ui-state-hover a {
+        padding: 12px 20px !important;
+      }
+    }
+    a, &.ui-tabs-active a:focus {
+      outline: none;
+    }
+  }
+  .ui-tabs-nav li.ui-tabs-active {
+    .ui-tabs-anchor:focus, &:focus, a:focus {
+      outline: none;
+    }
+  }
+}
+.ui-state-default .ui-corner-top:focus {
+  outline: none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  &:focus {
+    outline: none;
+  }
+  a {
+    &:hover, &:focus {
+      outline: none;
+    }
+  }
+}
+
+/*CALENDAR*/
+/*POPUP*/
+
+.ui-dialog .ui-dialog-title {
+  text-align: left;
+}
+
+/*WIZARD*/
+/*NAVIGATION*/
+.nav-header{
+  background: $nav-bg-color;
+  padding: 24px 40px;
+}
+
+.sk-navigation-dropdown > .sk-dropnav-dropdown, .sk-subnavigation {
+  border-radius: $border-radius;
+  margin-top: 5px;
+  box-shadow: $box-shadow;
+}
+
+.sk-navigation-dropdown > .sk-dropnav-dropdown > .sk-dropnav-dropdown-item {
+  padding: 5px;
+  border-radius: $border-radius;
+}
+
+.sk-navigation-horizontal {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.ui-tabs {
+  margin: 0 !important;
+}
+.user-photo{
+  border: $border-width solid rgba(255,255,255,0.4);
+  border-radius: 40px;
+  margin: auto;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+// {{$Model.CurrentUser.data.0.SmallPhotoUrl}}
+}
+
+/*SEARCH*/
+/*alt search styling*/
+/*alt search placeholder text color styling*/
+
+.search-alt.sk-search {
+  .ui-autocomplete-input {
+    border: $border-width solid $alt-search-color;
+    background: $alt-search-color;
+    color: $text-light-color;
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &:-moz-placeholder,
+    &::placeholder {
+      color: $text-light-color;
+    }
+  }
+  > div.nx-field-reference-search {
+    color: $text-light-color;
+  }
+}
+
+/*search icon style*/
+
+/*WEB FONTS*/
+/*font awesome colors*/
+
+.ui-icon {
+  &.ui-icon-blank, &.ui-icon-carat-1-n, &.ui-icon-carat-1-ne, &.ui-icon-carat-1-e, &.ui-icon-carat-1-se, &.ui-icon-carat-1-s, &.ui-icon-carat-1-sw, &.ui-icon-carat-1-w, &.ui-icon-carat-1-nw, &.ui-icon-carat-2-n-s, &.ui-icon-carat-2-e-w, &.ui-icon-triangle-1-n, &.ui-icon-triangle-1-ne, &.ui-icon-triangle-1-e, &.ui-icon-triangle-1-se, &.ui-icon-triangle-1-s, &.ui-icon-triangle-1-sw, &.ui-icon-triangle-1-w, &.ui-icon-triangle-1-nw, &.ui-icon-triangle-2-n-s, &.ui-icon-triangle-2-e-w, &.ui-icon-arrow-1-n, &.ui-icon-arrow-1-ne, &.ui-icon-arrow-1-e, &.ui-icon-arrow-1-se, &.ui-icon-arrow-1-s, &.ui-icon-arrow-1-sw, &.ui-icon-arrow-1-w, &.ui-icon-arrow-1-nw, &.ui-icon-arrow-2-n-s, &.ui-icon-arrow-2-ne-sw, &.ui-icon-arrow-2-e-w, &.ui-icon-arrow-2-se-nw, &.ui-icon-arrowstop-1-n, &.ui-icon-arrowstop-1-e, &.ui-icon-arrowstop-1-s, &.ui-icon-arrowstop-1-w, &.ui-icon-arrowthick-1-n, &.ui-icon-arrowthick-1-ne, &.ui-icon-arrowthick-1-e, &.ui-icon-arrowthick-1-se, &.ui-icon-arrowthick-1-s, &.ui-icon-arrowthick-1-sw, &.ui-icon-arrowthick-1-w, &.ui-icon-arrowthick-1-nw, &.ui-icon-arrowthick-2-n-s, &.ui-icon-arrowthick-2-ne-sw, &.ui-icon-arrowthick-2-e-w, &.ui-icon-arrowthick-2-se-nw, &.ui-icon-arrowthickstop-1-n, &.ui-icon-arrowthickstop-1-e, &.ui-icon-arrowthickstop-1-s, &.ui-icon-arrowthickstop-1-w, &.ui-icon-arrowreturnthick-1-w, &.ui-icon-arrowreturnthick-1-n, &.ui-icon-arrowreturnthick-1-e, &.ui-icon-arrowreturnthick-1-s, &.ui-icon-arrowreturn-1-w, &.ui-icon-arrowreturn-1-n, &.ui-icon-arrowreturn-1-e, &.ui-icon-arrowreturn-1-s, &.ui-icon-arrowrefresh-1-w, &.ui-icon-arrowrefresh-1-n, &.ui-icon-arrowrefresh-1-e, &.ui-icon-arrowrefresh-1-s, &.ui-icon-arrow-4, &.ui-icon-arrow-4-diag, &.ui-icon-extlink, &.ui-icon-newwin, &.ui-icon-refresh, &.ui-icon-shuffle, &.ui-icon-transfer-e-w, &.ui-icon-transferthick-e-w, &.ui-icon-folder-collapsed, &.ui-icon-folder-open, &.ui-icon-document, &.ui-icon-document-b, &.ui-icon-note, &.ui-icon-mail-closed, &.ui-icon-mail-open, &.ui-icon-suitcase, &.ui-icon-comment, &.ui-icon-person, &.ui-icon-print, &.ui-icon-trash, &.ui-icon-locked, &.ui-icon-unlocked, &.ui-icon-bookmark, &.ui-icon-tag, &.ui-icon-home, &.ui-icon-flag, &.ui-icon-calendar, &.ui-icon-cart, &.ui-icon-pencil, &.ui-icon-clock, &.ui-icon-disk, &.ui-icon-calculator, &.ui-icon-zoomin, &.ui-icon-zoomout, &.ui-icon-search, &.ui-icon-wrench, &.ui-icon-gear, &.ui-icon-heart, &.ui-icon-star, &.ui-icon-link, &.ui-icon-cancel, &.ui-icon-plus, &.ui-icon-plusthick, &.ui-icon-minus, &.ui-icon-minusthick, &.ui-icon-close, &.ui-icon-closethick, &.ui-icon-key, &.ui-icon-lightbulb, &.ui-icon-scissors, &.ui-icon-clipboard, &.ui-icon-copy, &.ui-icon-contact, &.ui-icon-image, &.ui-icon-video, &.ui-icon-script, &.ui-icon-alert, &.ui-icon-info, &.ui-icon-notice, &.ui-icon-help, &.ui-icon-check, &.ui-icon-bullet, &.ui-icon-radio-on, &.ui-icon-radio-off, &.ui-icon-pin-w, &.ui-icon-pin-s, &.ui-icon-play, &.ui-icon-pause, &.ui-icon-seek-next, &.ui-icon-seek-prev, &.ui-icon-seek-end, &.ui-icon-seek-start, &.ui-icon-seek-first, &.ui-icon-stop, &.ui-icon-eject, &.ui-icon-volume-off, &.ui-icon-volume-on, &.ui-icon-power, &.ui-icon-signal-diag, &.ui-icon-signal, &.ui-icon-battery-0, &.ui-icon-battery-1, &.ui-icon-battery-2, &.ui-icon-battery-3, &.ui-icon-circle-plus, &.ui-icon-circle-minus, &.ui-icon-circle-close, &.ui-icon-circle-triangle-e, &.ui-icon-circle-triangle-s, &.ui-icon-circle-triangle-w, &.ui-icon-circle-triangle-n, &.ui-icon-circle-arrow-e, &.ui-icon-circle-arrow-s, &.ui-icon-circle-arrow-w, &.ui-icon-circle-arrow-n, &.ui-icon-circle-zoomin, &.ui-icon-circle-zoomout, &.ui-icon-circle-check, &.ui-icon-circlesmall-plus, &.ui-icon-circlesmall-minus, &.ui-icon-circlesmall-close, &.ui-icon-squaresmall-plus, &.ui-icon-squaresmall-minus, &.ui-icon-squaresmall-close, &.ui-icon-grip-dotted-vertical, &.ui-icon-grip-dotted-horizontal, &.ui-icon-grip-solid-vertical, &.ui-icon-grip-solid-horizontal, &.ui-icon-gripsmall-diagonal-se, &.ui-icon-grip-diagonal-se {
+    color: $icon-dark-color;
+  }
+}
+
+/*KPI*/
+.kpi-header .sk-wrapper {
+  background: rgba(0, 0, 0, 0.2);
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+  width: 200px;
+  min-height: 40px;
+  padding: 1px 0;
+
+}
+.kpi-data .sk-wrapper {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+
+/*COLLAPSIBLE PANEL*/
+.ui-accordion-header {
+  color: $icon-dark-color !important;
+  background: $text-light-color !important;
+  border-bottom: $border-width solid $border-color;
+  & .ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-s {
+    color: $icon-dark-color !important;
+  }
+}
+.ui-accordion .ui-accordion-header {
+  font-size: 16px !important;
+}
+
+/*MISC*/
+.nx-field {
+  input:not([type="radio"]):not([type="checkbox"]):focus, textarea:focus, .nx-richtext-input:focus {
+    border-color: $input-focus-color;
+  }
+}
+.ui-autocomplete-input:focus {
+  border-color: $input-focus-color;
+}
+.nx-field.nx-layout-above.required.nx-modified input {
+  border-color: $modified-input-color;
+}
+.nx-editor-header input.searchbox:focus, input.ui-autocomplete-input:focus {
+  border-color: $input-focus-color;
+  outline: none;
+}
+
+/*MULTI SELECT*/
+.ui-multiselect-filter input {
+  &:focus {
+    border-color: $input-focus-color;
+    outline: none;
+  }
+  padding: 6px !important;
+  border-radius: $border-radius;
+  margin-bottom: 5px;
+}
+
+/*DATE PICKER*/
+.ui-datepicker.ui-widget-content td {
+  a, span {
+    padding-top: 7px;
+    padding: 7px 3px;
+  }
+  a {
+    &.ui-state-default:hover, &.ui-state-hover {
+      border: none;
+      background: $hover-color;
+      font-weight: bold;
+      text-decoration: none;
+      color: $text-light-color;
+    }
+  }
+}
+
+/* HIGHLIGHTED UI STATE */
+a {
+  &.ui-state-default :hover, &.ui-state-highlight:hover {
+    border: none;
+    background: $hover-color;
+    font-weight: bold;
+    text-decoration: none;
+    color: $text-light-color;
+  }
+}
+
+.ui-datepicker.ui-widget-content td {
+  a.ui-state-hover:hover {
+    border: none;
+    background: $hover-color;
+    font-weight: bold;
+    text-decoration: none;
+    color: $text-light-color;
+  }
+  span {
+    &.ui-state:hover, &.ui-state-hover {
+      border: none;
+      background: $hover-color;
+      font-weight: bold;
+      text-decoration: none;
+      color: $text-light-color;
+    }
+  }
+}
+
+div.nx-actionselect {
+  background: $text-light-color;
+}
+
+.nx-actionselect-label {
+  top: -28px;
+}
+
+.nx-actionselect-arrow > div.ui-icon {
+  color: $text-dark-color !important;
+}
+
+.nx-actionselect {
+  &:hover, &:focus {
+    background: $hover-color;
+    color: $text-dark-color;
+  }
+}
+
+div.nx-actionselect {
+  color: $text-dark-color;
+}
+
+/*MESSAGES + ALERTS*/
+
+.nx-message {
+  background: $message-color;
+}
+.nx-warning {
+  background: $warning-color;
+}
+.nx-page-problems-dismiss {
+  background-color: transparent;
+}
+.ui-icon.ui-icon-close {
+  color: $text-light-color;
+}
+
+/*CONTAINER*/
+.border-only {
+  border: $border-width solid $border-color;
+  border-radius: $container-border-radius;
+}
+.container {
+  border: $border-width solid $border-color;
+  border-radius: $container-border-radius;
+  background: $text-light-color;
+  margin-top: 32px;
+  .sk-wrapper {
+    padding: 24px;
+  }
+}
+.page {
+  background: $page-color;
+}
+
+/*STYLE GUIDE SPECIFIC*/
+.doc {
+  text-transform: uppercase;
+  display: block;
+}
+.color-swatch .sk-wrapper {
+  width: 200px;
+  height: 200px;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+}
+.swatch-text {
+  height: 200px;
+}
+.documentation{
+  background-color: lighten($documentation-color, 55%);
+  border-left: 16px solid $documentation-color;
+  padding: 32px;
+  margin: 15px 0;
+}
