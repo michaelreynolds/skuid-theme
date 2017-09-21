@@ -93,10 +93,11 @@ $alt-search-color:          $blue-dark-green;
 $warning-color:             $orange-dark;
 $message-color:             $green-emerald;
 $page-color:                $grey-smoke;
-$hover-color:               $blue-royal;
+
 $disabled-color:            $grey-smoke;
 $nav-bg-color:              $blue-expedia;
-$blue-hover:                $blue-azure;
+$hover-color:               $blue-royal;
+$hover-light-color:         $blue-azure;
 
 $btn-primary-color:         $green-emerald;
 $btn-primary-text-color:    $text-light-color;
@@ -175,8 +176,8 @@ $box-shadow:                0 2px 2px 0 rgba(0, 0, 0, 0.2);
     border: $border-width solid $alt-btn-color;
   }
   &:hover, &.ui-state-default:hover {
-    background-color: darken($alt-btn-color,10%);
-    border-color: darken($alt-btn-color,10%);
+    background-color: darken($alt-btn-color, 10%);
+    border-color: darken($alt-btn-color, 10%);
     color: $text-light-color;
   }
 }
@@ -188,6 +189,7 @@ $box-shadow:                0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*DROPDOWN*/
+
 .nx-actionselect-dropdown {
   margin-top: 10px;
 }
@@ -199,30 +201,29 @@ $box-shadow:                0 2px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 0 0.75rem;
   font-weight: 400;
 }
-
-//.dropdown div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus
-div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
+.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
   // border: $border-width solid $btn-secondary-focus-color;
   outline: none;
 }
-
-.dropdown{
-  & .sk-dropnav-text .sk-dropnav-dropdown-item{
-    border: $border-width solid $btn-secondary-border-color;
-    padding: 0 1rem 0 1rem;
-    border-radius: $border-radius;
-    &:focus{
-      //border: $border-width solid $btn-secondary-focus-color;
-      outline: none;
-    }
+.sk-dropnav-dropdown-item{
+  &:hover, &:active, &:focus{
+    background: #f4f6f9;
   }
-  & .sk-dropnav-arrow{
-    display: none;
+}
+.sk-dropnav-text .sk-dropnav-dropdown-item{
+  border: $border-width solid $btn-secondary-border-color;
+  padding: 0 1rem 0 1rem;
+  border-radius: $border-radius;
+  &:focus{
+    //border: $border-width solid $btn-secondary-focus-color;
+    outline: none;
   }
 }
 .sk-dropnav-arrow{
   display: none;
 }
+
+
 // /*CHECKBOX*/
 // /*styles the checkboxes universally*/
 // .nx-field input[type="checkbox"] {
@@ -308,7 +309,7 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
       min-width: 100%;
       &.ui-state-active, &.ui-state-hover, & {
         border: 0 !important;
-        background: $blue-hover;
+        background: $hover-light-color;
         border-radius: 0 !important;
         color: #54698d;
       }
@@ -327,7 +328,7 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
     }
     &.ui-tabs .ui-tabs-nav li.ui-tabs-active{
       & a, &.ui-state-hover a{
-        background: $blue-hover;
+        background: $hover-light-color;
         border-radius: 0;
       }
       & li.ui-state-hover {
@@ -352,9 +353,9 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
 
 // class needed to be added subtabset in order to remove borders
 .verticaltabs .ui-tabs-panel {
+  border-top: none !important;
   border-right: none !important;
   border-bottom: none !important;
-  border-top: none !important;
   border-left: none !important;
   border-radius: 0 !important;
 }
@@ -370,22 +371,20 @@ div.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
 
 /*WIZARD*/
 /*NAVIGATION*/
+
 .nav-header{
   background: $nav-bg-color;
   padding: 24px 40px;
 }
-
 .sk-navigation-dropdown > .sk-dropnav-dropdown, .sk-subnavigation {
   border-radius: $border-radius;
   margin-top: 5px;
   box-shadow: $box-shadow;
 }
-
 .sk-navigation-dropdown > .sk-dropnav-dropdown > .sk-dropnav-dropdown-item {
   padding: 5px;
   border-radius: $border-radius;
 }
-
 .sk-navigation-horizontal {
   border-top: none !important;
   border-bottom: none !important;
@@ -542,10 +541,6 @@ a {
   }
 }
 
-div.nx-actionselect {
-  background: $text-light-color;
-}
-
 .nx-actionselect-label {
   top: -28px;
 }
@@ -556,7 +551,7 @@ div.nx-actionselect {
 
 .nx-actionselect {
   &:hover, &:focus {
-    background: $hover-color;
+    //background: $hover-light-color !important;
     color: $text-dark-color;
   }
 }
