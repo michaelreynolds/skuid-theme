@@ -82,12 +82,15 @@
 .sk-timefilter-body {
   border: 1px solid #D0D3D8; }
 
-.sk-navigation-item > span {
-  padding: 0 0.75rem;
-  font-weight: 400; }
+.sk-navigation-dropdown > .sk-dropnav-dropdown, .sk-navigation-dropdown .sk-subnavigation {
+  border: 1px solid #D0D3D8; }
 
 .sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
   outline: none; }
+
+.sk-navigation-item > span {
+  padding: 0 0.75rem;
+  font-weight: 400; }
 
 .sk-dropnav-dropdown-item:hover, .sk-dropnav-dropdown-item:active, .sk-dropnav-dropdown-item:focus {
   background: #f4f6f9; }

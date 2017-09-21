@@ -131,6 +131,7 @@ $box-shadow:                0 2px 2px 0 rgba(0, 0, 0, 0.2);
 /*TABLE*/
 /*BUTTONS*/
 
+//date picker buttons
 .sk-timefilter-button{
   border-color: $btn-primary-border-color !important;
   background: $btn-primary-color !important;
@@ -196,14 +197,20 @@ $box-shadow:                0 2px 2px 0 rgba(0, 0, 0, 0.2);
 .sk-timefilter-body {
   border: $border-width solid $border-color;
 }
+
 //nav dropdown popup fix
+.sk-navigation-dropdown{
+  & > .sk-dropnav-dropdown, .sk-subnavigation{
+    border: $border-width solid $border-color;
+  }
+  & .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
+    // border: $border-width solid $btn-secondary-focus-color;
+    outline: none;
+  }
+}
 .sk-navigation-item > span{
   padding: 0 0.75rem;
   font-weight: 400;
-}
-.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus{
-  // border: $border-width solid $btn-secondary-focus-color;
-  outline: none;
 }
 .sk-dropnav-dropdown-item{
   &:hover, &:active, &:focus{
