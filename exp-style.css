@@ -82,24 +82,25 @@
 .sk-timefilter-body {
   border: 1px solid #D0D3D8; }
 
-.sk-navigation-dropdown > .sk-dropnav-dropdown, .sk-navigation-dropdown .sk-subnavigation {
+.dropdown-button .sk-navigation-dropdown > .sk-dropnav-dropdown, .dropdown-button .sk-navigation-dropdown .sk-subnavigation {
   border: 1px solid #D0D3D8; }
 
-.sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
+.dropdown-button .sk-navigation-dropdown .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
   outline: none; }
 
-.sk-navigation-item > span {
+.dropdown-button .sk-navigation-item > span {
   padding: 0 0.75rem;
   font-weight: 400; }
 
-.sk-dropnav-dropdown-item:hover, .sk-dropnav-dropdown-item:active, .sk-dropnav-dropdown-item:focus {
+.dropdown-button .sk-dropnav-dropdown-item:hover, .dropdown-button .sk-dropnav-dropdown-item:focus {
   background: #f4f6f9; }
 
-.sk-dropnav-text .sk-dropnav-dropdown-item {
+.dropdown-button .sk-dropnav-text .sk-dropnav-dropdown-item {
   border: 1px solid #D0D3D8;
   padding: 0 1rem 0 1rem;
-  border-radius: 2px; }
-  .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
+  border-radius: 2px;
+  color: #555; }
+  .dropdown-button .sk-dropnav-text .sk-dropnav-dropdown-item:focus {
     outline: none; }
 
 .sk-dropnav-arrow {
@@ -134,41 +135,46 @@
   outline: none; }
 
 /*styling vertical tabs*/
-.nx-lefttabs.ui-tabs li.ui-state-default {
+.nx-righttabs.ui-tabs li.ui-state-default, .nx-lefttabs.ui-tabs li.ui-state-default {
   min-width: 100%; }
-  .nx-lefttabs.ui-tabs li.ui-state-default.ui-state-active, .nx-lefttabs.ui-tabs li.ui-state-default.ui-state-hover, .nx-lefttabs.ui-tabs li.ui-state-default {
+  .nx-righttabs.ui-tabs li.ui-state-default.ui-state-active, .nx-righttabs.ui-tabs li.ui-state-default.ui-state-hover, .nx-righttabs.ui-tabs li.ui-state-default, .nx-lefttabs.ui-tabs li.ui-state-default.ui-state-active, .nx-lefttabs.ui-tabs li.ui-state-default.ui-state-hover, .nx-lefttabs.ui-tabs li.ui-state-default {
     border: 0 !important;
     background: #ECF2FA;
     border-radius: 0 !important;
     color: #54698d; }
-  .nx-lefttabs.ui-tabs li.ui-state-default.ui-tabs-active.ui-state-active {
+  .nx-righttabs.ui-tabs li.ui-state-default.ui-tabs-active.ui-state-active, .nx-lefttabs.ui-tabs li.ui-state-default.ui-tabs-active.ui-state-active {
     border-radius: 0;
     border: 0; }
 
-.nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-helper-reset.ui-widget-header {
+.nx-righttabs.ui-tabs ul.ui-tabs-nav.ui-helper-reset.ui-widget-header, .nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-helper-reset.ui-widget-header {
   border: 0 !important;
   border-radius: 0 !important;
   background: none;
   height: 100%;
-  height: -webkit-fill-available;
-  border-right: 1px solid #d8dde6 !important; }
+  height: -webkit-fill-available; }
 
-.nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active.ui-state-hover a {
+.nx-righttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .nx-righttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active.ui-state-hover a, .nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active.ui-state-hover a {
   background: #ECF2FA;
   border-radius: 0; }
 
-.nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active li.ui-state-hover {
+.nx-righttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active li.ui-state-hover, .nx-lefttabs.ui-tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active li.ui-state-hover {
   border: none;
   border-radius: 0; }
 
-.nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-widget-header {
+.nx-righttabs.ui-tabs ul.ui-tabs-nav.ui-widget-header, .nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-widget-header {
   border: 0 !important;
   border-radius: 0 !important;
   background: none;
   padding-top: 1px; }
 
-.nx-lefttabs > .ui-tabs-panel {
+.nx-righttabs > .ui-tabs-panel, .nx-lefttabs > .ui-tabs-panel {
   padding: 2rem 2.5rem !important; }
+
+.nx-lefttabs.ui-tabs ul.ui-tabs-nav.ui-helper-reset.ui-widget-header {
+  border-right: 1px solid #d8dde6 !important; }
+
+.nx-righttabs.ui-tabs ul.ui-tabs-nav.ui-helper-reset.ui-widget-header {
+  border-left: 1px solid #d8dde6 !important; }
 
 .verticaltabs .ui-tabs-panel {
   border-top: none !important;
