@@ -2,7 +2,7 @@
 
 Instructions:
 
-*If node is not yet install: 
+*If node is not yet install:*
 
 Run these commands in terminal to setup:
 
@@ -11,7 +11,7 @@ Install Homebrew, NPM, and SASS:
 2. ```brew install node```
 3. ```npm install -g node-sass```
 
-*If node is already installed:
+*If node is already installed:*
 
 To Compile:
 
